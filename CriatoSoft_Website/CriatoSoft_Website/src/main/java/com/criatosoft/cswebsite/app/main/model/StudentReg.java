@@ -1,7 +1,9 @@
 package com.criatosoft.cswebsite.app.main.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class StudentReg {
@@ -26,6 +28,9 @@ public class StudentReg {
 	private float totalFees;
 	private float installment;
 	private String firstInstallmentDate;
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Batch batch;
 	
 	public String getName() {
 		return name;

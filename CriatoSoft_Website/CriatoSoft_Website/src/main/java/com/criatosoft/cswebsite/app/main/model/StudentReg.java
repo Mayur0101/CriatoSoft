@@ -7,9 +7,9 @@ import javax.persistence.Id;
 public class StudentReg {
 	
 	@Id
+	private long mobNo;
 	private String name;
 	private String addr;
-	private long mobNo;
 	private long altMobNo;
 	private String emial;
 	private String gender;
@@ -26,6 +26,8 @@ public class StudentReg {
 	private float totalFees;
 	private float installment;
 	private String firstInstallmentDate;
+	
+	private String gaurav;
 	
 	public String getName() {
 		return name;

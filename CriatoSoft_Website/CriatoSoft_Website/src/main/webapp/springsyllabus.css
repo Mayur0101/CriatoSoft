@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Source+Serif+Pro:wght@300;400;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+/*          572 :- Social Media             */
+
+body{
+    background-color: #000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Source Serif Pro', serif;
+    background: #fffafa;
+}
+
+
+.container{
+    max-width: 1300px;
+    width: 90%;
+    margin: 0% auto;
+}
+
+.fa{
+    display: none;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    position:fixed;
+    display: flex;
+    padding: 5px 6%;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px 0px rgba(51, 51, 51, 0.158);
+    width: 100%;
+    background: transparent;
+    z-index: 2;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.logo{
+    width: 200px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+
+
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background: #0400ff;
+    display: block;
+    margin: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li a{
+    font-size: 2.2rem;
+    text-decoration: none;
+    line-height: 1.7rem;
+    color: #FF324F;
+    transition: 0.5s ease;
+}
+
+.nav-links ul li a:hover{
+    color: #0400ff;
+}
+
+/*                  Social Media Bottom----------------------------------------------------*/
+
+.foot{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent ;
+    gap: 10px;
+}
+
+.foot .icons{
+   text-align: center;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   color: blue;
+   justify-content: space-evenly;
+   flex-direction: column;
+   position: relative;
+   z-index: 2;
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   object-position: center;
+   backdrop-filter: blur(5px);
+}
+
+.foot .icons span{
+   display: block;
+   height: 40px;
+   width: 40px;
+   background: transparent;
+   border-radius: 50%;
+   position: relative;
+   z-index: 2;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   color: #851616;
+}
+
+.foot .icons span i{
+   line-height: 40px;
+   font-size: 20px;
+}
+
+.foot .icons .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.foot .icons:hover .tooltip{
+    top: 50px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.foot .icons:hover span{
+    color: #ffffff;
+}
+
+.foot .icons:hover span,
+.foot .icons:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.foot .facebook:hover span,
+.foot .facebook:hover .tooltip{
+    background: #3b5999;
+
+}
+
+.foot .instagram:hover span,
+.foot .instagram:hover .tooltip{
+    background: #e1306c;
+}
+
+.foot .twitter:hover span,
+.foot .twitter:hover .tooltip{
+    background: #46c1f6;
+}
+
+.foot .youtube:hover span,
+.foot .youtube:hover .tooltip{
+    background: #CD201F;
+}
+
+/* --------------------header-body styling--------------- */
+
+.text-box{
+    /* width: 90%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    transform: translate(-50% ,-50%);
+}
+
+.text-box h1{
+    font-size: 5rem;
+    padding: 1.5rem;
+    color: #ff324f;
+    font-weight: 900;
+    transition: 0.5s;
+    letter-spacing: 10px;
+}
+.text-box h1:hover{
+    -webkit-text-stroke: 2px blue;
+    color: transparent;}
+
+    
+h1 span{
+    display: inline-block;
+    animation: animate 1s ease-in-out;
+
+}
+
+@keyframes animate {
+    0%{ 
+        opacity: 0%;
+        transform: rotateY(90deg);
+        filter: blur();
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur();
+}
+}
+h1 span:nth-child(1)
+{
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(2)
+{
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(3)
+{
+    animation-delay: 0.9s;
+}
+h1 span:nth-child(4)
+{
+    animation-delay: 1.2s;
+}
+h1 span:nth-child(5)
+{
+    animation-delay: 1.5s;
+}
+h1 span:nth-child(6)
+{
+    animation-delay: 1.8s;
+}
+h1 span:nth-child(7)
+{
+    animation-delay: 2.1s;
+}
+h1 span:nth-child(8)
+{
+    animation-delay: 2.4;
+}
+
+
+
+.text-box p{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
+}
+
+.btn{
+    border: 1px solid #ff324f;
+    display: inline-block;
+    min-width: 12%;
+    text-align: center;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    background: transparent;
+    font-size: 1.8rem;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #ff324f;
+    color: #fff;
+}
+
+
+/* --------tournament styling------------ */
+
+.categories h1{
+    margin-top: 100px;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    border-bottom: 3px solid #ff324f;  
+}
+
+.categories span{
+    color: #ff324f;
+}
+
+.categories p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin-bottom: 3.5rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.col{
+    flex-basis: 32%;
+    padding: 1rem 0.5rem;
+    margin-bottom: 3.5rem;
+    transition: all 0.3s ease-in-out;
+    background: #f2f2f2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col img{
+    min-width: 250px;
+    width: 100%;
+}
+
+.col h2{
+    font-size: 3rem;
+    color: #333;
+    margin-top: 1rem;
+    padding: 0.5rem auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.col h2 span{
+    color: #ff324f;
+}
+
+.col:hover{
+    transform: translateY(-8px);
+}
+
+
+/* --------------- teams styling -------------- */
+
+
+.col-2:hover{
+    transform: translateY(-10px);
+}
+
+/* ---------------- upcoming new batches ----------- */
+
+.upcoming{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(images/image3.jpg);
+    margin: 5rem 0;
+}
+
+.up-content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.up-content h2{
+    font-size: 2.2rem;
+    color: #ff523b;
+    text-align: center;
+    padding: 1.5rem ;
+    margin: 0.5rem;
+}
+
+.up-content span{
+    color: #fff;
+}
+
+.up-content h1{
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.up-content p{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.up-content a{
+    text-decoration: none;
+    margin: 1.5rem;
+}
+
+
+/* wishes--------------- */
+
+.testimonial{
+    padding-top: 6rem;
+}
+
+.testimonial h1{
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 4.5rem;
+}
+
+.testimonial span{
+    color: #ff324f;
+}
+
+.col-3{
+    flex-basis: 23%;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s ease;
+    background: #fff;
+    margin-bottom: 5rem;
+}
+
+.col-3:hover{
+    transform: translateY(-10px);
+}
+
+.col-3 img{
+    width: 50px;
+    margin-top: 1.5rem;
+    border-radius: 50%;
+    border: 0.8px solid #ff523b;
+}
+.col-3 p{
+    font-size: 1.8rem;
+    text-align: left;
+    color: #555;
+}
+
+.col-3 h3{
+    font-weight: 400;
+    font-size: 2.0rem;
+    color: #222;
+}
+
+
+.col-3 .rating{
+    color: #f44343;
+}
+
+.col-3 span{
+    color: #f44343;
+}
+
+.col-3 .fa-quote-left{
+    color: #f44343;
+    font-size: 1.8rem;
+}
+
+.rating{
+    padding: 1rem;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    color: #f44343;
+    text-align: center;
+}
+
+/* --------------- from blog styling ------------ */
+
+.blog{
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.blog span{
+    color: #ff324f;
+}
+
+
+.col p{
+    color: #333;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+}
+
+
+/* ------------- news ---------- */
+
+.col-5{
+    flex-basis: 24%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    transition: transform 0.5s ease-in-out;
+    background: #fff;
+}
+
+.col-5:hover{
+    transform: translateY(-7px);
+}
+
+.col-5 img{
+    min-width: 250px;
+    width: 100%;
+}
+
+.col-5 p{
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+
+.footer h1{
+    text-align: center;
+    color: #222;
+    font-size: 2.5rem;
+    margin: 3rem auto;
+}
+
+
+/* -------------- footer ------------ */
+
+.footer{
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 2rem;
+    padding: 4rem 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 1.0rem;
+    /* cursor: pointer; */
+}
+
+.col-6{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-1 img{
+    width: 180px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer-col-3 ,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.col-6 ul{
+    list-style: none;
+}
+
+.col-6 ul li{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.app-store{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+
+.copyright{
+    text-align: center;
+    padding-top: 0.5rem;
+    /* margin-bottom: 1rem; */
+}
+
+.copyright span{
+    color: #f44343;
+}
+
+.footer hr{
+    background: none;
+    height: 1px;
+    color: #8a8a8a;
+}
+
+.f-logo h1{
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.f-logo span{
+    color: #ff523b;
+    font-size: 3.0rem;
+    padding-bottom: 1rem;
+
+}
+
+
+
+
+@media (max-width:350px){
+
+}
+
+
+
+@media  (min-width:351px ) and (max-width:500px){
+
+}
+
+
+@media (min-width:501px) and (max-width:768px){
+
+}
+
+
+@media(min-width:769px) and (max-width:1200px){
+    
+}
+
+/*-------------Social Media---------------------------------------------------------------------------------------------------*/
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+.mayur{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 0.7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80%;
+    height: 7vh;
+}
+
+.footwrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:transparent ;
+    gap: 10px;
+}
+
+.footwrapper .icons{
+   text-align: center;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   color: blue;
+   justify-content: space-evenly;
+   flex-direction: column;
+   position: relative;
+   z-index: 2;
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   object-position: center;
+   backdrop-filter: blur(5px);
+}
+
+.footwrapper .icons span{
+   display: block;
+   height: 40px;
+   width: 40px;
+   background: transparent;
+   border-radius: 50%;
+   position: relative;
+   z-index: 2;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   color: #FF324F;
+}
+
+.footwrapper .icons span i{
+   line-height: 40px;
+   font-size: 20px;
+}
+
+.footwrapper .icons .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footwrapper .icons:hover .tooltip{
+    top: 50px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.footwrapper .icons:hover span{
+    color: #ffffff;
+}
+
+.footwrapper .icons:hover span,
+.footwrapper .icons:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.footwrapper .facebook:hover span,
+.footwrapper .facebook:hover .tooltip{
+    background: #3b5999;
+
+}
+
+.footwrapper .instagram:hover span,
+.footwrapper .instagram:hover .tooltip{
+    background: #e1306c;
+}
+
+.footwrapper .twitter:hover span,
+.footwrapper .twitter:hover .tooltip{
+    background: #46c1f6;
+}
+
+.footwrapper .youtube:hover span,
+.footwrapper .youtube:hover .tooltip{
+    background: #CD201F;
+}
+
+
+/*--------------------------------------------Bubble Branches-----------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+
+
+.watercourse .container{
+    font-size: 62.5%;
+}
+
+.watercourse .container{
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.watercourse .container h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #b18ef8;
+}
+
+.watercourse .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.watercourse .cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px 160px;
+}
+
+.watercourse .cards .card{
+    position: relative;
+    width: 300px;
+    height: 300px;                                                        /*Bubble size*/
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(233, 249, 255, 0.9),
+    10px 10px 20px rgba(237, 248, 250, 0.9);
+    transition: all 0.5s ease;
+    
+}
+
+.watercourse .cards .card:hover{
+    border-radius: 51% 49% 65% 35% / 65% 61% 39% 35% ;
+}
+
+.watercourse .cards .card::before{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    left: 25%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.watercourse .cards .card::after{
+    position: absolute;
+    content: '';
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 32%;
+    box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+    rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+    rgb(204, 219, 232) 2px 2px 2px 0px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+.watercourse .card:nth-child(1){
+    border-radius: 53% 47% 37% 63% / 41% 41% 59% 59%  ;
+}
+
+.watercourse .card:nth-child(2){
+    border-radius: 71% 29% 37% 63% / 41% 51% 49% 59% ;
+}
+
+.watercourse .cards .card .card__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+
+                                                                            /*Font Size kvnagar*/
+.watercourse .cards .card-1 .card__content h2{
+    margin-top: 2.5rem;
+    color: #fb6f92;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 3.36px 1.896px #c4b59d,0 -2px 1px #fff;
+}
+
+.watercourse .cards .card-1 .card__content span{
+    position: absolute;
+    color: #fb6f92;
+    top: 10%;
+    left: 65%;
+    font-size: 2.5rem;
+    pointer-events: none;
+    font-weight: 800;
+    opacity: 0.5;
+}
+
+.watercourse .cards .card-1 .card__content p{
+    font-size: 1.1rem;
+    width: 200px;
+    color: #707070;
+}
+
+.watercourse .cards .card-1 .card__content button{
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #fb6f92;
+    color: #fb6f92;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.watercourse button:hover{
+    scale: 105%;
+}
+
+.watercourse .cards .card-2 .card__content h2{
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #06d6a0;
+    text-shadow: 0 3.36px 1.896px #9db5c4,0 -2px 1px #fff;
+}
+
+.watercourse .cards .card-2 .card__content span{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    font-size: 2.5rem;
+    pointer-events: none;
+    font-weight: 800;
+    opacity: 0.5;
+    color: #06d6a0;
+}
+
+.watercourse .cards .card-2 .card__content p{
+    font-size: 1.1rem;
+    width: 200px;
+    color: #707070;
+}
+
+.watercourse .cards .card-2 .card__content button{
+    padding: 0.5rem 0.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border: 1px solid #06d6a0;
+    color: #06d6a0;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}

@@ -8,7 +8,7 @@ body {
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   background-color: var(--blue);
-  background-image: url("image3.jpg");
+  background-image: url("courseimages/image3.jpg");
   color: rgb(14, 13, 13);
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -50,30 +50,30 @@ h1{
   transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 .javaImg {
-  background-image: url(java.jpg);
+  background-image: url();
   background-color: rgb(229, 186, 186);
 }
 .pythonImg {
-  background-image: url(python.jpg);
+  background-image: url(courseimages/python.jpg);
 }
 .hibernateImg {
-  background-image: url(angular.jpg);
+  background-image: url(courseimages/angular.jpg);
  padding-left: 0%;
  padding-right: 25%;
 }
 .cloudImg {
-  background-image: url(cloud2.jpg);
+  background-image: url(courseimages/cloud2.jpg);
  padding-left: 0%;
  padding-right: 25%;
 }
 .hadoopImg {
-  background-image: url(hadoop.jpg);
+  background-image: url(courseimages/hadoop.jpg);
  padding-left: 0%;
  padding-right: 25%;
   
 }
 .springImg {
-  background-image: url(spring4.png);
+  background-image: url(courseimages/spring4.png);
  padding-left: 0%;
  padding-right: 25%;
   
